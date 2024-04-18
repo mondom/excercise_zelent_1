@@ -23,12 +23,17 @@ const btn = document.querySelector('.button')
 const text = document.querySelector('.text')
 
 let arr = []
+// let ourNumbers = ''
 
 const showNumbers = () => {
 	if (input1.value < input2.value) {
 		for (let i = input1.value; i <= input2.value; i++) {
 			arr.push(i)
             text.textContent = arr.join(' ')
+            // ourNumbers = ourNumbers + i + ' '
+            // text.textContent = ourNumbers
+            // console.log(ourNumbers);
+            // ↑ 'pushowanie' każdej iteracji do stringa
 		}
 	}
 }
