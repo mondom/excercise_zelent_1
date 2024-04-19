@@ -84,3 +84,9 @@ clickers.forEach(clicker => {
 })
 
 document.addEventListener('DOMContentLoaded', startInt)
+
+
+const box = document.querySelector('.box')
+box.addEventListener('click', function() {
+    alert('foo')
+}, false)
